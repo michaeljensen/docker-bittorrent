@@ -2,7 +2,7 @@
 directory.default.set = /torrents/download
 session.path.set = /torrents/session
 schedule2 = watch_directory,5,5,load_start=/torrents/watch/*.torrent
-network.port_range.set = 6890-6999
+network.port_range.set = 6881-6887
 network.port_random.set = no
 trackers.use_udp.set = yes
 dht.port.set = 6881
