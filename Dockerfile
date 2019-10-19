@@ -7,7 +7,7 @@ FROM ubuntu:18.04
 MAINTAINER Michael Jensen version:1.0
 
 RUN apt-get update && export DEBIAN_FRONTEND=noninteractive && export DEBIAN_PRIORITY=critical && apt-get -y -o Dpkg::Options::="--force-confdef" dist-upgrade
-RUN apt-get install -y bittornado
+RUN apt-get install -y rtorrent
 RUN apt-get clean && rm -rf /var/lib/apt/lists/*
 
 RUN mkdir -p /torrents
